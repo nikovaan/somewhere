@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int luku;
+  int luvun_nelio;
+  cout << "Syötä kokonaisluku: ";
+  cin >> luku;
+  luvun_nelio = luku * luku;
+  cout << "Antamasi luvun neliö: " << luvun_nelio << endl;
+}
+
+/* Tämä on hieno ohjelma, joka on kommentoitu */
+#include <iostream>
+using namespace std;
+
+/* Esitellään ensimmäiseksi ohjelman main()-metodi */
+int main()
+{
+ int luku;  // alustetaan muuttuja kokonaisluvulle
+ cout << "Anna luku: ";  // kysytään lukua
+ cin >> luku;  // luetaan syöte muuttujaan
+      
+ /* Tämä kommentti havainnollistaa
+    usean rivin mittaista kommenttia.
+    Nyt tulostetaan monitorille syötetty luku */
+      
+ cout << "Luku oli " << luku;
+}
+

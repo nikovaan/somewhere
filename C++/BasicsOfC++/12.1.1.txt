@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int prodprices[] = { 10, 14, 22, 33, 44, 13, 22, 55, 66, 77 };
+	int prodnbr, sum, payment;
+
+	cout << "Supermarket" << endl << "===========" << endl;
+
+	do
+	{
+		cout << "Valitse tuote (1-10) 0 lopetus: ";
+		cin >> prodnbr;
+		if (prodnbr > 10)
+		{
+			cout << "Anna tuote oikein väliltä (1-10)" << endl;
+		}
+		else if (prodnbr != 0)
+		{
+			cout << "Tuote: " << prodnbr << " Hinta: " << prodprices[prodnbr - 1] << endl;
+			sum = sum + prodprices[prodnbr - 1];
+		}
+	} while (prodnbr != 0);
+
+	cout << "Yhteensä: " << sum << endl << "Maksu: ";
+	cin >> payment;
+	cout << "Vaihto: " << payment - sum << endl;
+}

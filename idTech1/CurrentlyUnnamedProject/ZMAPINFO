@@ -1,0 +1,412 @@
+GameInfo
+{
+    PlayerClasses = "boltDoomPlayer"
+}
+
+ClearEpisodes
+
+Episode MAP01
+{
+	Name = "Episode 1"
+}
+
+Episode HUB2
+{
+	Name = "Episode 2"
+}
+
+Episode E3M1
+{
+	Name = "Episode 3"
+}
+
+Cluster 1
+{
+	EnterText = "intro text telling you wat is happen"
+	Music = "Music/BTSXIntermission.mid"
+	Flat = "OIRONL81"
+}
+
+Cluster 2
+{
+	EnterText = "episode 2 text telling you wat is happen"
+	Music = "Music/BTSXIntermission.mid"
+	Flat = "OIRONL81"
+}
+
+Cluster 3
+{
+	EnterText = "episode 3 text telling you wat is happen"
+	ExitText = "u did it u won"
+	Music = "Music/BTSXIntermission.mid"
+	Flat = "OIRONL81"
+}
+
+Map MAP01 "Intro Map"
+{
+	LevelNum = 1
+	Next = "HUB1"
+	Cluster = 1
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+	ResetHealth
+	ResetInventory
+}
+
+Map HUB1 "Hub v1"
+{
+	LevelNum = 2
+	Next = "E1M1"
+	Cluster = 1
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E1M1 "E1M1"
+{
+	LevelNum = 3
+	Next = "E1M2"
+	Cluster = 1
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+Map E1M2 "E1M2"
+{
+	LevelNum = 4
+	Next = "E1M3"
+	Cluster = 1
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E1M3 "E1M3"
+{
+	LevelNum = 5
+	Next = "E1M4"
+	SecretNext = "E1M6"
+	SecretNext = EndSequence, "<intermission sequence>"
+	Cluster = 1
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E1M4 "E1M4"
+{
+	LevelNum = 7
+	Next = "E1M5"
+	Cluster = 1
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E1M5 "E1M5"
+{
+	LevelNum = 8
+	Next = "HUB2"
+	Cluster = 1
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E1M6 "E1M6"
+{
+	LevelNum = 6
+	Next = "E1M4"
+	Cluster = 1
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map HUB2 "Hub v2"
+{
+	LevelNum = 9
+	Next = "E2M1"
+	Cluster = 2
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+	ResetHealth
+	ResetInventory
+}
+
+Map E2M1 "E2M1"
+{
+	LevelNum = 10
+	Next = "E2M2"
+	Cluster = 2
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E2M2 "E2M2"
+{
+	LevelNum = 11
+	Next = "E2M3"
+	Cluster = 2
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E2M3 "E2M3"
+{
+	LevelNum = 12
+	Next = "E2M4"
+	Cluster = 2
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E2M4 "E2M4"
+{
+	LevelNum = 13
+	Next = "E2M5"
+	SecretNext = "E2M6"
+	Cluster = 2
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E2M5 "E2M5"
+{
+	LevelNum = 15
+	Next = "HUB2"
+	Cluster = 2
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E2M6 "E2M6"
+{
+	LevelNum = 14
+	Next = "E2M5"
+	Cluster = 2
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map HUB3 "Hub v3"
+{
+	LevelNum = 16
+	Next = "E3M1"
+	Cluster = 3
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+	ResetHealth
+	ResetInventory
+}
+
+Map E3M1 "E3M1"
+{
+	LevelNum = 17
+	Next = "E3M2"
+	Cluster = 3
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E3M2 "E3M2"
+{
+	LevelNum = 19
+	Next = "E3M3"
+	SecretNext = "E3M6"
+	Cluster = 3
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E3M3 "E3M3"
+{
+	LevelNum = 20
+	Next = "E3M4"
+	Cluster = 3
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E3M4 "E3M4"
+{
+	LevelNum = 21
+	Next = "E3M5"
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E3M5 "E3M5"
+{
+	LevelNum = 22
+	Next = "HUB4"
+	Cluster = 3
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map E3M6 "Ep3 Map6"
+{
+	LevelNum = 18
+	Next = "E3M3"
+	Cluster = 3
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+}
+
+Map HUB4 "Hub v4"
+{
+	LevelNum = 23
+	Next = "THANK"
+	Cluster = 3
+	Sky1 = "OSKY01"
+	Par = 30
+	Music = "Music/AlienJungle.mid"
+	InterMusic = "Music/MystProj"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+	ResetHealth
+	ResetInventory
+}
+
+Map THANK "Thanks for playing!"
+{
+	LevelNum = 24
+	Cluster = 3
+	Sky1 = "OSKY01"
+	Music = "Music/AlienJungle.mid"
+	BorderTexture = "0HEXAF04"
+	NoJump
+	NoCrouch
+	CheckSwitchRange
+	ResetHealth
+	ResetInventory
+}

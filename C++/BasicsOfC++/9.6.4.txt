@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Koira
+{
+  public:
+  int ika;
+  string nimi, rotu, aani;
+
+  Koira(int ika, string nimi, string rotu, string aani);
+  void TulostaTiedot();
+  string Hauku();
+};
+
+Koira::Koira(int uusi_ika, string uusi_nimi, string uusi_rotu, string uusi_aani)
+{
+  nimi = uusi_nimi;
+  ika = uusi_ika;
+  rotu = uusi_rotu;
+  aani = uusi_aani;
+}
+
+void Koira::TulostaTiedot()
+{
+  cout << "Nimi: " << nimi << endl << "Ikä: " << ika << endl << "Rotu: " << rotu << endl;
+}
+
+string Koira::Hauku()
+{
+  return aani;
+}
+
+int main()
+{
+  Koira rekku(2, "Rekku", "Dalmatialainen", "Hau!!!");
+  cout << "Koiran tiedot:" << endl;
+  rekku.TulostaTiedot();
+  cout << "Koira sanoo: " << rekku.Hauku();
+}

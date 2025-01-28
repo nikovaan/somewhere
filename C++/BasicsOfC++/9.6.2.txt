@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class KysyJaTulosta
+{
+public:
+  void TeeHommasi(char merkkijono[]);  
+};
+
+void KysyJaTulosta::TeeHommasi(char merkkijono[])
+{
+    string syote;
+
+    cout << merkkijono;
+
+    getline(cin >> ws, syote);
+    cout << syote << endl;
+}
+
+int main (void)
+{
+  char merkkijono[] = "Anna merkkijono, jonka tulostan: ";
+  KysyJaTulosta olio;
+  olio.TeeHommasi(merkkijono);
+}

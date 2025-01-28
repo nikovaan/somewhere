@@ -1,0 +1,22 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+	fstream tiedosto;
+	tiedosto.open("opiskelijat.txt", ios_base::in | ios_base::out | ios_base::app);
+	if (!tiedosto.is_open())
+	{
+		cout << "Tiedoston avaaminen ei onnistunut!";
+		exit(-1);
+	}
+
+	char luokka;
+	string opiskelijan_nimi;
+
+	while (tiedosto >> luokka && getline(tiedosto, opiskelijan_nimi))
+	{
+		cout << opiskelijan_nimi << ": luokka " << luokka << endl;
+	}
+}

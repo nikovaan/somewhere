@@ -1,0 +1,41 @@
+Ohjelma laskee yhteen haluamasi ajanjakson aikana tehdyt
+työtunnit sekä keskimääräisen työpäivän pituuden.
+Kuinka monta päivää: 
+4
+Anna 1. päivän työtunnit: 7
+Anna 2. päivän työtunnit: 8
+Anna 3. päivän työtunnit: 9
+Anna 4. päivän työtunnit: 5.4
+Tehdyt tunnit yhteensä: 29.4
+Keskimääräinen työpäivän pituus: 7.35
+Syötetyt tunnit: 7 8 9 5.4 
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int paivat;
+	float tunnit_yhteensa;
+	int i;
+
+	cout << "Ohjelma laskee yhteen haluamasi ajanjakson aikana tehdyt" << endl << "työtunnit sekä keskimääräisen työpäivän pituuden." << endl << "Kuinka monta päivää: " << endl;
+	cin >> paivat;
+	float tyojakso[paivat];
+
+	for (i = 0; i < paivat; i++)
+	{
+		cout << "Anna " << i + 1 << ". päivän työtunnit: ";
+		cin >> tyojakso[i];
+		tunnit_yhteensa = tunnit_yhteensa + tyojakso[i];
+	}
+
+	
+	cout << "Tehdyt tunnit yhteensä: " << tunnit_yhteensa << endl;
+	cout << "Keskimääräinen työpäivän pituus: " << tunnit_yhteensa / paivat << endl;
+	cout << "Syötetyt tunnit: ";
+	for (i = 0; i < paivat; i++)
+	{
+		cout << tyojakso[i];
+	}
+}

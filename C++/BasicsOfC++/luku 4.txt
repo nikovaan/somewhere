@@ -1,0 +1,83 @@
+unary operators
+Operaattori	Symboli	Toiminto				Esimerkki
+Inkrementointi	++	Kasvattaa operandin arvoa yhdellä	++x ja x++
+Dekrementointi	--	Vähentää operandin arvosta yhden	--y ja y--
+
+binary operators
+Operaattori	Merkitys	Esimerkki
++		summa		a+y
+-		erotus		x-y
+/		osamäärä	x / y
+*		tulo		x * y
+%		Jakojäännös	x % y
+
+Operaattori	Prioriteetti
+++, --		1
+*, /, %		2
++, -		3
+
+Operaattori			Symboli	Kysymys							Esimerkki
+Suurempi kuin			>	Onko operandi1 suurempi kuin operandi2			x > y
+Pienempi kuin			<	Onko operandi1 pienempi kuin operandi2			x < y
+Suurempi tai yhtä suuri kuin	>=	Onko operandi1 suurempi tai yhtä suuri kuin operandi2	x >= y
+Pienempi tai yhtä suuri kuin	<=	Onko operandi1 pienempi tai yhtä suuri kuin operandi2	x <= y
+Erisuuri kuin			!=	Onko operandi1 erisuuri kuin operandi2			x != y
+Yhtä suuri kuin			==	Onko operandi1 yhtä suuri kuin operandi2		x == y
+
+Operaattori	Suhteellinen prioriteetti
+<, <=, >, >=	1
+!=, ==		2
+
+Matemaattiset operaattorit > vertailuoperaattorit
+
+Operaattori	Symboli		Esimerkki
+AND		&&		vertailu1 && vertailu2
+OR		||		vertailu1 || vertailu2
+NOT		!		!vertailu1
+
+Operaattori	Prioriteettitaso suhteessa muihin loogisiin operaattoreihin	Prioriteettitaso suhteessa muihin operaattoreihin
+!		1								Sama prioriteetti kuin operaattoreilla ++ ja --. Siis korkeampi kuin vertailuoperaattoreilla ja binäärisillä operaattoreilla.
+&&		2								Alempi kuin matemaattisilla operaattoreilla ja vertailuoperaattoreilla.
+||		3								Alempi kuin matemaattisilla operaattoreilla ja vertailuoperaattoreilla.
+
+esim 4.1: ++ -operaattori
+#include <iostream>
+using namespace std;
+
+int main()
+{
+ int luku, luku2;
+
+ cout << "Syötä jokin kokonaisluku: ";
+ cin >> luku;
+
+ luku2 = luku;
+ cout << "Muuttujan luku arvo on " << luku << " ja muuttuja luku2" 
+ << " arvo on " << luku2 << endl;
+ 
+ /* huomaa seuraavassa ++ -operaattorin käyttö */
+ cout << "Arvot nyt:" << endl;
+ cout << "luku == " << ++luku;
+ cout << " ja luku2 == " << luku2++ << endl;
+
+ cout << "ja nyt luku == " << luku << " ja luku2 == " << luku2 << endl;
+
+ return 0;
+}
+
+esim 4.2: tosi vai epätosi
+#include <iostream>
+using namespace std;
+
+int main()
+{
+ cout << "Seuraavissa 0 vastaa epätotta ja 1 totta." << endl;
+ 
+ cout << "Väite 412 < 6723 on " << (412 < 6723) << endl;
+ cout << "Väite 412 > 6723 on " << (412 > 6723) << endl;
+ 
+ cout << "Väite (6 < 3) && (1 > 0) on " << ((6 < 3) && (1 > 0)) << endl;
+ cout << "Väite (6 < 3) || (1 > 0) on " << ((6 < 3) || (1 > 0)) << endl;
+
+ return 0;
+}

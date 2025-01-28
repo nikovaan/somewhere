@@ -1,0 +1,35 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+	fstream tiedosto;
+	tiedosto.open("luvut.txt", ios_base::in|ios_base::out|ios_base::app);
+	if (!tiedosto.is_open())
+	{
+		cout << "Tiedoston avaaminen ei onnistunut!";
+		exit(-1);
+	}
+
+	int luku = 0;
+	int summa = 0;
+	bool kesken = true;
+
+	while (kesken)
+	{
+		if (!tiedosto.eof())
+		{
+			tiedosto >> luku;
+			summa = summa + luku;
+			luku = 0;
+		}
+		else
+		{
+			tiedosto << endl << summa;
+			tiedosto.close();
+			kesken = false;
+		}
+	}
+	cout << "Lukujen summa on " << summa << endl;
+}

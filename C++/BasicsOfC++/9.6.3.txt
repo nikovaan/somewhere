@@ -1,0 +1,41 @@
+Tehtävässä on kirjoitettu valmiiksi pääohjelma, sekä luokka "Laskin". Sinun tehtäväsi on laatia luokka "Tulostaja", joka kysyy käyttäjältä kaksi kokonaislukua, kutsuu luokan "Laskin" metodia "Summa()" välittäen metodille syötteenä saadut kokonaisluvut. Metodi "Summa()" laskee lukujen summan ja palauttaa tuloksen. Lopuksi metodi "Tulosta()" tulostaa saadun summan näytölle. Alla olevaa koodia ei siis tarvitse kopioida palautuskenttään. 
+
+#include <iostream>
+using namespace std;
+
+class Laskin
+{
+  public:
+
+  int Summa(int eka, int toka);
+};
+
+int Laskin::Summa(int eka, int toka)
+{
+  int summa = eka + toka;
+  return summa;
+}
+
+class Tulostaja
+{
+  public:
+    void Tulosta();
+};
+
+void Tulostaja::Tulosta()
+{
+  int luku1, luku2;
+  Laskin laskija;
+
+  cout << "Syötä ensimmäinen kokonaisluku: ";
+  cin >> luku1;
+  cout << "Syötä toinen kokonaisluku: ";
+  cin >> luku2;
+  cout << "Lukujen summa: " << laskija.Summa(luku1, luku2) << endl;
+}
+
+int main()
+{  
+  Tulostaja olio;
+  olio.Tulosta();
+}

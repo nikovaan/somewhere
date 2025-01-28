@@ -1,0 +1,42 @@
+Tieto			Tavujen määrä
+Kirjain x 		1
+Luku 100 		2
+Luku 120.145 		4
+Lause: Viope C 		7
+Sivullinen tekstiä 	noin 3000
+
+Tietotyyppi				Varattu sana		Koko(tavuina)	Arvoalue
+kokonaisluku				int			2		-3276832767
+etumerkitön kokonaisluku		unsigned int		2		0..65535
+lyhyt kokonaisluku			short int		2		-3276832767
+etumerkitön lyhyt kokonaisluku		unsigned short int	2		0..65535
+pitkä kokonaisluku			long int		4		-2147483648..2147483647
+etumerkitön pitkä kokonaisluku		unsigned long int	4		0..4294967295
+merkki					char			1		-128...128 (ASCII-merkit)
+etumerkitön merkki			unsigned char		1		0..255 (ASCII-merkit)
+yksinkertaisen tarkkuuden liukuluku	float			4		1.2e-38..3.4e38
+kaksinkertaisen tarkkuuden liukuluku	double			8		2.2e-308..1.8e308
+totuusarvo				bool			1		1 (true) tai 0 (false)
+
+Merkkiyhdistelmä	Merkitys
+\"			Tulostaa lainausmerkin
+\'			Tulostaa heittomerkin
+\n			Tulostaa rivinvaihdon
+\t			Tulostaa vaakasarkaimen
+\\			Tulostaa kenoviivan
+
+ 1:  #include <iostream>
+ 2:  #include <string>
+ 3:  using namespace std;
+ 4:
+ 5:  int main()
+ 6:  {
+ 7:  	string kehoite = "Syötä jokin teksti: ";
+ 8:	string syote_teksti;
+ 9:
+10:	cout << kehoite;
+11:	cin >> syote_teksti;
+12:	cout << "Kirjoittamasi teksti: " << syote_teksti;
+13: }
+
+

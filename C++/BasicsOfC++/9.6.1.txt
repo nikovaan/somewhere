@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Tulostusluokka
+{
+public:
+  void Tulosta(char merkkijono[50]);
+};
+
+void Tulostusluokka::Tulosta(char merkkijono[50])
+{
+  int i;
+
+    for (i = 0; i < 50; i++)
+    {
+        if (merkkijono[i] != NULL)
+        {
+            cout << merkkijono[i];
+        }
+        else
+            break;
+    }
+}
+
+int main()
+{
+  char merkkijono[50];
+  cout << "Anna merkkijono, jonka tulostan: ";
+  cin.get(merkkijono, 50);
+  Tulostusluokka tulostaja;
+  tulostaja.Tulosta(merkkijono);
+}
