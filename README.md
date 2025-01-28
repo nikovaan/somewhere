@@ -4,4 +4,4 @@ See each folder's readme for details on what they were. TODO: come back here aft
 
 Everything here was 100% written by me.
 
-License: none of this is licensed for any kind of use by people who aren't me. TODO: change to GPL.
+License: none of this is currently licensed for any kind of use by people who aren't me.
